@@ -5,19 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <div>
+    <div class="page">
+        <div class="page1">
+            <h1>Stock Profit & Loss Calculator</h1>
             <label for>Inital Value</label>
             <input id="initial" type="number">
             <label for>Stocks</label>
             <input id="quantity" type="number">
             <label for>Final Value</label>
             <input id="final" type="number">
-            <button id="check">Check</button>
+            <button style="margin:10px" id="check">Check</button>
+            <div id="outputDiv"></div>
         </div>
-        <div id="outputDiv"></div>
     </div>
     <script src="script.js"></script>
 </body>

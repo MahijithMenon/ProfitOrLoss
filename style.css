@@ -1,0 +1,15 @@
+.page{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+}
+body{
+    background-color: #cbd5e1;
+}
+.page1{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}

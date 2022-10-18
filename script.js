@@ -11,16 +11,22 @@ function calculateProfitorLoss(){
     else{
     let output,outputP;
 if(initialValue.value>finalValue.value){
-output=initialValue.value-finalValue.value;
+output=(initialValue.value-finalValue.value)*(stocks.value);
 outputP=(output/initialValue.value)*100
-outputDiv.style.color="green"
-outputDiv.innerText=`You made a profit of ${output} and profit percentage of ${outputP}%`;
+outputDiv.style.color="red"
+outputDiv.style.margin="20px"
+outputDiv.style.padding="20px"
+outputDiv.style.border="2px solid black"
+outputDiv.innerText=`You made a loss of ${output} and loss percentage of ${outputP}%`;
 }
 else if(finalValue.value>initialValue.value){
-output=finalValue.value-initialValue.value;
-outputP=(output/initialValue.value)*100;
-outputDiv.style.color="red"
-outputDiv.innerText=`You made a loss of ${output} and loss percentage of ${outputP}%`;
+    output=(finalValue.value-initialValue.value)*(stocks.value);
+    outputP=(output/initialValue.value)*100;
+    outputDiv.style.margin="20px"
+    outputDiv.style.padding="20px"
+    // outputDiv.style.color="red"
+    outputDiv.style.color="green"
+    outputDiv.innerText=`You made a profit of ${output} and profit percentage of ${outputP}%`;
 }
 else{
     outputDiv.style.color="black"
